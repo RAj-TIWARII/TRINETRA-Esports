@@ -16,6 +16,13 @@
             padding: 0;
             overflow-x: hidden;
         }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #000;
+        }
         .navbar-brand {
             font-weight: bold;
             color: #00ffcc;
@@ -43,8 +50,9 @@
         .esp {
             width: 50px;
         }
-        #home, #players {
-            padding: 3rem 0;
+        #home, #players, #live, #contact {
+            padding-top: 80px; /* Space to avoid overlapping with fixed header */
+            padding-bottom: 3rem;
         }
         #home {
             background-image: url(Hbanner.png);
@@ -91,11 +99,15 @@
             height: auto;
             border-radius: 10px;
         }
+
+        .navgg{
+            position: fixed;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navgg navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <img class="esp" src="esports.png" alt=""> 
             <p class="m-2 p-1"><b>TRINETRA Esports</b></p>
@@ -174,7 +186,7 @@
         <div class="container text-center">
             <h2 class="mb-4"><i class="ri-live-line"></i> Live Tournaments</h2>
             <p>Stay tuned for our latest live streams and matches!</p>
-            <iframe width="500px" height="615px" src="https://www.youtube.com/embed/Twcb0yQfLXA?si=vo8k0WKNRgsH77yY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="500px" height="615px" src="https://www.youtube.com/embed/Twcb0yQfLXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
 
