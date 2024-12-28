@@ -12,6 +12,9 @@
             background-color: #121212;
             color: #ffffff;
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
         .navbar-brand {
             font-weight: bold;
@@ -23,34 +26,79 @@
         .btn-live {
             background-color: #ff1744;
             color: #fff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .btn-live:hover {
             background-color: #d50000;
+            transform: scale(1.1);
         }
         .player-card {
             background-color: #1f1f1f;
             border: none;
+            transition: transform 0.3s ease;
         }
-       .esp{
-        width: 50px;
-        right: 0;
-       }
-
-       #home{
-        background-image: url(banner1.jpg);
-       }
-
-       #players{
-        background-image: url(banner2.jpg);
-       }
-        
+        .player-card:hover {
+            transform: scale(1.05);
+        }
+        .esp {
+            width: 50px;
+        }
+        #home, #players {
+            padding: 3rem 0;
+        }
+        #home {
+            background-image: url(Hbanner.png);
+            background-size: cover;
+            background-position: center;
+        }
+        #players {
+            background: linear-gradient(to top left, #000066 0%, #ccccff 100%);
+            background-size: cover;
+            background-position: center;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            color: #00ffcc;
+        }
+        .discord-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #5865F2;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .discord-link:hover {
+            background-color: #4752c4;
+            transform: scale(1.1);
+        }
+        .discord-link i {
+            font-size: 20px;
+        }
+        iframe {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img class="esp" src="esports.png" alt=""> <p class="m-2 p-1"><b>TRINETRA Esports</b></p>
+            <img class="esp" src="esports.png" alt=""> 
+            <p class="m-2 p-1"><b>TRINETRA Esports</b></p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -74,16 +122,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="text-center">
+    <section id="home" class="text-center text-white">
         <div class="container-fluid">
             <h1>Welcome to TRINETRA Esports</h1>
             <p>Competing at the highest level in gaming and esports.</p>
-            <a href="#live" class="btn btn-live">Watch Live</a> 
-            <p> <a href="https://discord.gg/nMNf6C23U3"> Discord <i class="ri-discord-fill"></i></a> </p>
+            <a href="#live" class="btn btn-live">Watch Live</a>
         </div>
-      
     </section>
-  
 
     <!-- Players Section -->
     <section id="players" class="py-5">
@@ -127,11 +172,9 @@
     <!-- Live Section -->
     <section id="live" class="py-5 bg-dark">
         <div class="container text-center">
-            <h2 class="mb-4"> <i class="ri-live-line"></i> Live Tournaments</h2>
+            <h2 class="mb-4"><i class="ri-live-line"></i> Live Tournaments</h2>
             <p>Stay tuned for our latest live streams and matches!</p>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Twcb0yQfLXA?si=vo8k0WKNRgsH77yY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+            <iframe width="500px" height="615px" src="https://www.youtube.com/embed/Twcb0yQfLXA?si=vo8k0WKNRgsH77yY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -142,6 +185,11 @@
             <p class="text-center">Reach out to us via email at <a href="mailto:info@trinitroesports.com">info@trinitroesports.com</a></p>
         </div>
     </section>
+
+    <!-- Discord Button -->
+    <a href="https://discord.gg/nMNf6C23U3" class="discord-link">
+        <i class="ri-discord-fill"></i> Discord
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
