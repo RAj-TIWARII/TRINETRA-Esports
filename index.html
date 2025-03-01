@@ -251,45 +251,179 @@
     </div>
   </section>
   
-  <!-- Players Section -->
-  <section id="players">
-    <div class="container">
-      <h2 class="text-center mb-5" data-aos="fade-up">Meet Our Elite Players</h2>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card">
-            <img src="banner1.jpg" class="card-img-top" alt="Player One">
-            <div class="card-body">
-              <h5 class="card-title">Player One</h5>
-              <p class="card-text">Captain / Sniper extraordinaire.</p>
-              <a href="player1.html" class="btn btn-primary">View Profile</a>
-            </div>
+  <!-- Meet Our Players Section -->
+<section id="players" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">Meet Our Elite Players</h2>
+    <div class="row g-4">
+      <!-- Player Card 1 -->
+      <div class="col-md-4" data-aos="fade-right">
+        <div class="card player-card">
+          <img src="banner1.jpg" class="card-img-top" alt="Player One">
+          <div class="card-body">
+            <h5 class="card-title">Player One</h5>
+            <p class="card-text">Captain / Sniper</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#playerOneModal">View Profile</button>
+          </div>
+          <div class="player-overlay">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#playerOneModal">More Info</a>
           </div>
         </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card">
-            <img src="banner2.jpg" class="card-img-top" alt="Player Two">
-            <div class="card-body">
-              <h5 class="card-title">Player Two</h5>
-              <p class="card-text">Strategist / Support wizard.</p>
-              <a href="player2.html" class="btn btn-primary">View Profile</a>
-            </div>
+      </div>
+      <!-- Player Card 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card player-card">
+          <img src="banner2.jpg" class="card-img-top" alt="Player Two">
+          <div class="card-body">
+            <h5 class="card-title">Player Two</h5>
+            <p class="card-text">Strategist / Support</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#playerTwoModal">View Profile</button>
+          </div>
+          <div class="player-overlay">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#playerTwoModal">More Info</a>
           </div>
         </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card">
-            <img src="banner3.jpg" class="card-img-top" alt="Player Three">
-            <div class="card-body">
-              <h5 class="card-title">Player Three</h5>
-              <p class="card-text">Fragger with lightning speed.</p>
-              <a href="player3.html" class="btn btn-primary">View Profile</a>
-            </div>
+      </div>
+      <!-- Player Card 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card player-card">
+          <img src="banner3.jpg" class="card-img-top" alt="Player Three">
+          <div class="card-body">
+            <h5 class="card-title">Player Three</h5>
+            <p class="card-text">Fragger</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#playerThreeModal">View Profile</button>
+          </div>
+          <div class="player-overlay">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#playerThreeModal">More Info</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>
+
+<!-- Player One Modal -->
+<div class="modal fade" id="playerOneModal" tabindex="-1" aria-labelledby="playerOneModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="playerOneModalLabel">Player One - Captain / Sniper</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Player One is a seasoned captain and an expert sniper with a razor-sharp aim and leadership to match. Always calm under pressure and ready for the next epic battle.</p>
+        <ul>
+          <li>Experience: 5 years in professional esports</li>
+          <li>Special Skills: Sharpshooting, leadership, strategic planning</li>
+          <li>Favorite Game: Tactical Warfare</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="player1.html" class="btn btn-primary">View Full Profile</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Player Two Modal -->
+<div class="modal fade" id="playerTwoModal" tabindex="-1" aria-labelledby="playerTwoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="playerTwoModalLabel">Player Two - Strategist / Support</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Player Two is the mastermind behind the strategies, providing unwavering support and out-of-the-box tactics that keep the team ahead of the curve.</p>
+        <ul>
+          <li>Experience: 4 years in competitive esports</li>
+          <li>Special Skills: Tactical planning, teamwork, in-game analysis</li>
+          <li>Favorite Game: Battle Legends</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="player2.html" class="btn btn-primary">View Full Profile</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Player Three Modal -->
+<div class="modal fade" id="playerThreeModal" tabindex="-1" aria-labelledby="playerThreeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="playerThreeModalLabel">Player Three - Fragger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Player Three is all about high-octane action, known for turning the tide of the game with explosive plays and unmatched reflexes in the heat of battle.</p>
+        <ul>
+          <li>Experience: 3 years in competitive play</li>
+          <li>Special Skills: Aggressive play, quick reflexes, clutch performance</li>
+          <li>Favorite Game: Speed Demons</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="player3.html" class="btn btn-primary">View Full Profile</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <style>
+.player-card {
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.player-card img {
+  transition: transform 0.3s ease;
+}
+.player-card:hover img {
+  transform: scale(1.1);
+}
+/* Overlay on Hover */
+.player-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-card:hover .player-overlay {
+  opacity: 1;
+}
+.player-overlay a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.player-overlay a:hover {
+  background: #00ffcc;
+  border-color: #00ffcc;
+}
+
+  </style>
   <!-- Tournaments Section with Carousel -->
   <section id="tournaments" class="bg-dark">
     <div class="container">
